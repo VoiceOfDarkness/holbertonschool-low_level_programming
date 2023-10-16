@@ -6,9 +6,9 @@
  */
 int main(void)
 {
-int num = 48;
+int num;
 
-for (num; num < 58; num++)
+for (num = 48; num < 58; num++)
 {
 putchar(num);
 if (num != 57)
