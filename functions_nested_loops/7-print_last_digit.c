@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _islower - returns 1 if char is lowercase
+ * _ print_last_digit - returns last digit
  *
- * @c: character to be checked if lower case, type int
+ * @n: digit
  *
- * Return: 1 if lower case, 0 otherwise
+ * Return: last digit
  **/
 
 int print_last_digit(int n)
