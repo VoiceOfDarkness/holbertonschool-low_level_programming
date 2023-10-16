@@ -13,7 +13,8 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-int last_n = n % 10;
+int last_n;
+last_n = n % 10;
 
 if (last_n > 5)
 {
