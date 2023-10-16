@@ -2,7 +2,7 @@
 /**
  * print_sign - returns 1 if char is lowercase
  *
- * @c: character to be checked if grater than zero etc, type int
+ * @n: character to be checked if grater than zero etc, type int
  *
  * Return: 1 and prints + if > 0, 0 otherwise
  **/
