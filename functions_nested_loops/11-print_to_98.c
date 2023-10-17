@@ -6,9 +6,8 @@
  *
  * Return: 1 if lower case, 0 otherwise
  **/
-int main()
+int print_to_98(int n)
 {
-int n = -10;
 int border = 98;
 
 if (n < border)
