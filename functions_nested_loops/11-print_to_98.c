@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * print_to_98 - returns 1 if char is lowercase
  *
@@ -8,9 +8,7 @@
  **/
 int print_to_98(int n)
 {
-int border = 98;
-
-if (n < border)
+if (n < 98)
 {
 	while (n <= 98)
 	{
