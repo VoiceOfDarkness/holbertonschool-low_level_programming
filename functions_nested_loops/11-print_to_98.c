@@ -8,25 +8,25 @@
  **/
 int main()
 {
-    int n = -10;
-    int border = 98;
+int n = -10;
+int border = 98;
 
-    if (n < border)
-        while (n <= 98)
-        {
-            if (n == 98)
-                printf("%d", n);
-            else
-                printf("%d, ", n);
-            n++;
-        }
-    else
-        while (n >= 98)
-        {
-            if (n == 98)
-                printf("%d", n);
-            else
-                printf("%d, ", n);
-            n--;
-        }
+if (n < border)
+while (n <= 98)
+{
+if (n == 98)
+printf("%d", n);
+else
+printf("%d, ", n);
+n++;
+}
+else
+while (n >= 98)
+{
+if (n == 98)
+printf("%d", n);
+else
+printf("%d, ", n);
+n--;
+}
 }
