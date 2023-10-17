@@ -13,9 +13,9 @@ int j;
 
 if (n > 0)
 {
-for (j = 0; j <= 9; j++)
+for (j = 0; j < n; j++)
 {
-for (i = 0; i < j - 1; i++)
+for (i = 0; i < j; i++)
 {
 _putchar(' ');
 }
