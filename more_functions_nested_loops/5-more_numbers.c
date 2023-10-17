@@ -23,5 +23,5 @@ _putchar(i % 10 + '0');
 _putchar('\n');
 }
 
-return 0;
+return (0);
 }
