@@ -39,4 +39,5 @@ printf("%d, ", n);
 n--;
 }
 }
+printf("\n");
 }
