@@ -1,31 +1,36 @@
 #include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+* main - Entry point
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
-int i;
-
-for (i = 1; i <= 100; i++)
+int number;
+int dev;
+for (number = 1; number < 101; number++)
 {
-if (i % 3 == 0 && i % 5 == 0) {
-    printf("FizzBuzz ");
-}
-else if (i % 3 == 0)
+dev = 0;
+if (number % 3 == 0)
 {
-    printf("Fizz ");
+printf("Fizz");
+dev = 1;
 }
-else if (i % 5 == 0)
+if (number % 5 == 0)
 {
-    printf("Buzz ");
+printf("Buzz");
+dev = 1;
 }
-else {
-    printf("%d ", i);
+if (dev == 0)
+{
+printf("%d", number);
+}
+dev = 0;
+if (number != 100)
+{
+printf(" ");
 }
 }
 printf("\n");
-
-return 0;
+return (0);
 }
