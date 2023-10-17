@@ -7,7 +7,7 @@
  *
  * Return: 1 if lower case, 0 otherwise
  **/
-int print_to_98(int n)
+void print_to_98(int n)
 {
 if (n < 98)
 {
