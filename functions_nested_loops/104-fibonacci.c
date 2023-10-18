@@ -7,7 +7,7 @@
  */
 #define MAX_DIGITS 1000
 
-void strsum(const char a, const char b, char result)
+void strsum(const char* a, const char* b, char* result)
 {
 int ai;
 int bi;
