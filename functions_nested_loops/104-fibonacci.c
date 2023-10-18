@@ -1,17 +1,10 @@
 #include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
 **/
-
-typedef unsigned char byte;
-#define N 300
-
-typedef struct
-{
-byte digits[N];
-} Bignum;
 
 void printbig(Bignum a)
 {
