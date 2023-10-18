@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-int n = 98, i;
-unsigned long fib[98];
+int n = 99, i;
+unsigned long fib[99];
 
 fib[0] = 0;
 fib[1] = 1;
