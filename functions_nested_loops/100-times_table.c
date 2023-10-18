@@ -13,12 +13,7 @@ void print_times_table(int n)
 int x, y, size;
 
 
-if (n > 15 || n < 0)
-{
-return (0);
-}
-else
-{
+if (n < 15 || n > 0)
 {
 for (y = 0; y <= n; y++)
 {
@@ -53,7 +48,7 @@ _putchar((size % 10) + '0');
 }
 _putchar('\n');
 }
-}
+
 }
 
 }
