@@ -18,5 +18,5 @@ result += i;
 }
 printf("%i\n", result);
 
-return 0;
+return (0);
 }
