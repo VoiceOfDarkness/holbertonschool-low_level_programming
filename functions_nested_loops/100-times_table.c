@@ -15,7 +15,7 @@ int x, y, size;
 
 if (n > 15 || n < 0)
 {
-_putchar('\n');
+return (0);
 }
 else
 {
