@@ -1,93 +1,70 @@
 #include <stdio.h>
-#include "main.h"
+#include <string.h>
 /**
  * main - Entry point
  *
  * Return: Always 0 (Success)
-**/
+ */
+#define MAX_DIGITS 1000
 
-typedef unsigned char byte;
-#define N 300
-
-typedef struct
-{
-    byte digits[N];
-} Bignum;
-
-void printbig(Bignum a)
-{
-int leading = 1;
+void strsum(const char* a, const char* b, char* result) {
+int ai;
+int bi;
+int carry;
 int i;
+int num1;
+int num2;
+int sum;
+int j;
+int temp;
 
-for (i = 0; i < N; ++i)
-{
-if (a.digits[i])
-{
-leading = 0;
-printf("%c", a.digits[i] + '0');
-}
-else
-{
-if (!leading)
-{
-printf("0");
-}
-}
-}
-if (leading)
-printf("0");
-}
-
-Bignum initbig(int x)
-{
-Bignum a = {{0}};
-a.digits[N - 1] = x;
-return (a);
-}
-
-Bignum addbig(Bignum a, Bignum b)
-{
-Bignum c;
-int sum, carry = 0, i;
-
-for (i = N - 1; i >= 0; --i)
-{
-sum = a.digits[i] + b.digits[i] + carry;
-if (sum <= 9)
-{
-c.digits[i] = sum;
+ai = strlen(a);
+bi = strlen(b);
 carry = 0;
-}
-else
-{
-c.digits[i] = sum - 10;
-carry = 1;
-}
-}
-return (c);
+i = 0;
+while (ai > 0 || bi > 0 || carry > 0) {
+num1 = (ai > 0) ? (a[--ai] - '0') : 0;
+num2 = (bi > 0) ? (b[--bi] - '0') : 0;
+
+sum = num1 + num2 + carry;
+result[i++] = (sum % 10) + '0';
+carry = sum / 10;
 }
 
-int main(void)
-{
-Bignum a, b, c;
+result[i] = '\0';
+
+j = 0;
+i--;
+while (j < i) {
+temp = result[j];
+result[j] = result[i];
+result[i] = temp;
+j++;
+i--;
+}
+}
+
+void fibonacci(int n) {
+char a[MAX_DIGITS] = "1";
+char b[MAX_DIGITS] = "2";
+char temp[MAX_DIGITS];
 int i;
 
-a = initbig(1);
-b = initbig(1);
+printf("1, 2, ");
+for (i = 3; i <= n; i++) {
+strsum(a, b, temp);
+strcpy(a, b);
+strcpy(b, temp);
 
-
-printbig(a);
-printf(", ");
-
-for (i = 3; i <= 99; ++i)
-{
-c = addbig(a, b);
-printbig(c);
-if (i != 99)
-printf(", ");
-a = b;
-b = c;
+printf("%s", b);
+if (i < n) {
+    printf(", ");
 }
+}
+}
+
+int main() {
+fibonacci(98);
 printf("\n");
-return (0);
+return 0;
 }
