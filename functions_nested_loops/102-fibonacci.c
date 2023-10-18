@@ -4,7 +4,8 @@
  *
  * Return: Always 0 (Success)
  */
-int main(void) {
+int main(void)
+{
 int n = 52, i;
 unsigned long fib[52];
 
