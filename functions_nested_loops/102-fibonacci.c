@@ -6,7 +6,7 @@
  */
 int main() {
 int n = 50, i;
-unsigned long long fib[50];
+unsigned long fib[50];
 
 fib[0] = 0;
 fib[1] = 1;
