@@ -1,0 +1,22 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+int result;
+
+
+for (int i = 0; i < 1028; i++)
+{
+if (i % 3 == 0 && i % 5 == 0)
+{
+result += i;
+}
+}
+printf("%i\n", result);
+
+return 0;
+}
