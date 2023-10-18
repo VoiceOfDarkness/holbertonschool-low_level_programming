@@ -6,8 +6,9 @@
  */
 int main(void)
 {
-int n = 33, i;
-unsigned long fib[33];
+int n = 34, i;
+unsigned long fib[34];
+unsigned long result = 0;
 
 fib[0] = 0;
 fib[1] = 1;
@@ -20,8 +21,10 @@ fib[i] = fib[i - 1] + fib[i - 2];
 for (i = 1; i < n; i++)
 {
 if (fib[i] % 2 == 0)
-printf("%lu, ", fib[i]);
+result += fib[i];
 }
+
+printf("%lu", result);
 
 printf("\n");
 return (0);
