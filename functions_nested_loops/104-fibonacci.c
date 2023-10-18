@@ -6,6 +6,14 @@
  * Return: Always 0 (Success)
 **/
 
+typedef unsigned char byte;
+#define N 300
+
+typedef struct
+{
+    byte digits[N];
+} Bignum;
+
 void printbig(Bignum a)
 {
 int leading = 1;
