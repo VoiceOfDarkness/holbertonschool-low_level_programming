@@ -16,7 +16,9 @@ byte digits[N];
 void printbig(Bignum a)
 {
 int leading = 1;
-for (int i = 0; i < N; ++i)
+int i;
+
+for (i = 0; i < N; ++i)
 {
 if (a.digits[i])
 {
@@ -45,9 +47,9 @@ return (a);
 Bignum addbig(Bignum a, Bignum b)
 {
 Bignum c;
-int sum, carry = 0;
+int sum, carry = 0, i;
 
-for (int i = N - 1; i >= 0; --i)
+for (i = N - 1; i >= 0; --i)
 {
 sum = a.digits[i] + b.digits[i] + carry;
 if (sum <= 9)
@@ -67,6 +69,7 @@ return (c);
 int main(void)
 {
 Bignum a, b, c;
+int i;
 
 a = initbig(1);
 b = initbig(1);
@@ -75,7 +78,7 @@ b = initbig(1);
 printbig(a);
 printf(", ");
 
-for (int i = 3; i <= 99; ++i)
+for (i = 3; i <= 99; ++i)
 {
 c = addbig(a, b);
 printbig(c);
