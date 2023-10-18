@@ -67,9 +67,9 @@ if (i < n) {
 }
 }
 
-int main()
+int main(void)
 {
 fibonacci(98);
 printf("\n");
-return 0;
+return (0);
 }
