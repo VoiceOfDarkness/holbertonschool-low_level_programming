@@ -7,7 +7,8 @@
  */
 #define MAX_DIGITS 1000
 
-void strsum(const char* a, const char* b, char* result) {
+void strsum(const *char a, const *char b, *char result)
+{
 int ai;
 int bi;
 int carry;
@@ -61,8 +62,9 @@ strcpy(a, b);
 strcpy(b, temp);
 
 printf("%s", b);
-if (i < n) {
-    printf(", ");
+if (i < n)
+{
+printf(", ");
 }
 }
 }
