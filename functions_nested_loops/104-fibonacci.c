@@ -1,13 +1,18 @@
 #include <stdio.h>
 #include <string.h>
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+
 #define MAX_DIGITS 1000
 
-void strsum(const char* a, const char* b, char* result)
+/**
+ * strsum - returns sum of 2 string numbers
+ *
+ * @a: int
+ * @b: int
+ * @result: char
+ *
+ * Return: result
+ **/
+void strsum(const char *a, const char *b, char *result)
 {
 int ai;
 int bi;
@@ -47,6 +52,13 @@ i--;
 }
 }
 
+/**
+ * fibonacci - returns sum of 2 string numbers
+ *
+ * @n: int
+ *
+ * Return: result
+ **/
 void fibonacci(int n)
 {
 char a[MAX_DIGITS] = "1";
@@ -60,8 +72,8 @@ for (i = 3; i <= n; i++)
 strsum(a, b, temp);
 strcpy(a, b);
 strcpy(b, temp);
-
 printf("%s", b);
+
 if (i < n)
 {
 printf(", ");
@@ -69,6 +81,11 @@ printf(", ");
 }
 }
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 fibonacci(98);
