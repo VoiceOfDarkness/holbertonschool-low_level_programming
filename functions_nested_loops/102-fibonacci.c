@@ -6,7 +6,7 @@
  */
 int main() {
 int n = 52, i;
-unsigned long long fib[52];
+unsigned long fib[52];
 
 fib[0] = 0;
 fib[1] = 1;
@@ -18,11 +18,11 @@ fib[i] = fib[i-1] + fib[i-2];
 for (i = 2; i < n; i++) {
 if (i < 51)
 {
-printf("%llu, ", fib[i]);
+printf("%lu, ", fib[i]);
 }
 else
 {
-printf("%llu", fib[i]);
+printf("%lu", fib[i]);
 }
 }
 
