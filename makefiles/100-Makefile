@@ -12,13 +12,13 @@ RM := /bin/rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-    $(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-    rm -f *.o
+	$(RM) $(OBJ) $(NAME) *~ \#*\# *.swp
 
 oclean:
-    $(RM) $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: oclean clean
 
