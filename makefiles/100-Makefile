@@ -10,9 +10,7 @@ $(NAME): $(SRC:.c=.o)
 	$(CC) $(CFLAGS) -o $@ $^
 
 clean:
-	@find . -type f -name '*~' -exec rm -f {} +
-	@find . -type f -name '#*' -exec rm -f {} +
-	@rm -f $(NAME)
+	@rm *~ \#* $(NAME) $(OBJ)
 
 oclean:
 	@rm -f $(SRC:.c=.o)
