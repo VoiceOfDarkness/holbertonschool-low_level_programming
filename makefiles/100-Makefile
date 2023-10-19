@@ -2,11 +2,12 @@ CC = gcc
 SRC = $(wildcard *.c)
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = /bin/rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic
 DEPS = m.h
 
 .PHONY: all clean fclean oclean re
+
+RM := /bin/rm -f
 
 all: $(NAME)
 
