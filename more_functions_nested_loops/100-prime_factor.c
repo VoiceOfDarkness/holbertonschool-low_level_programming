@@ -1,5 +1,5 @@
-#inlcude <stdio.h>
-#inlcude "main.h"
+#include <stdio.h>
+#include "main.h"
 /**
  * main - Entry point
  *
@@ -14,6 +14,6 @@ for (i = 3; i < 782849; i += 2)
 while ((n % i == 0) && (n != i))
 n = n / i;
 }
-print("%lu\n", n);
+printf("%lu\n", n);
 return (0);
 }
