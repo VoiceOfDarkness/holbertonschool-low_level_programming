@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * 5-rev_string.c - Entry point
+ * rev_string - Entry point
  *
  *@s: int
  *
