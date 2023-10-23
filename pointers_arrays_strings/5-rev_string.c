@@ -2,7 +2,7 @@
 /**
  * 5-rev_string.c - Entry point
  *
- *@str: int
+ *@s: int
  *
  * Return: Always 0 (Success)
  */
@@ -10,8 +10,6 @@ void rev_string(char *s)
 {
 int len = 0;
 int i = 0;
-
-str = "My School";
 
 while (str[len] != '\0')
 len++;
