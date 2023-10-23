@@ -17,6 +17,9 @@ len++;
 
 half = len / 2;
 
+if (len % 2 == 1)
+half++;
+
 for (i = half; i <= len - 1; i++)
 _putchar(str[i]);
 
