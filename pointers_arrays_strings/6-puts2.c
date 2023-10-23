@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _puts - Entry point
+ * puts2 - Entry point
  *
  *@str: int
  *
@@ -16,8 +16,8 @@ len++;
 
 for (i = 0; i <= len; i++)
 if (i % 2 == 0 || i == 0)
-putchar(str[i]);
+_putchar(str[i]);
 
-putchar('\n');
+_putchar('\n');
 return (0);
 }
