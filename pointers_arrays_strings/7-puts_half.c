@@ -14,7 +14,7 @@ int i = 0;
 while (str[len] != '\0')
 len++;
 
-for (i = 0; i <= (len - 1) / 2; i++)
+for (i = len / 2; i <= len; i++)
 _putchar(str[i]);
 
 _putchar('\n');
