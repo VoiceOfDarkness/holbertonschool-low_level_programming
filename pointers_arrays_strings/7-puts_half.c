@@ -15,7 +15,7 @@ while (str[len] != '\0')
 len++;
 
 for (i = 0; i <= (len - 1) / 2; i++)
-putchar(str[i]);
+_putchar(str[i]);
 
-putchar('\n');
+_putchar('\n');
 }
