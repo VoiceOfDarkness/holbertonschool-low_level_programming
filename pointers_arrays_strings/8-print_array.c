@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * _puts - Entry point
+ * print_array - Entry point
  *
  *@a: array
  *
