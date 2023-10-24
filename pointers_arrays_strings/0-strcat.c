@@ -10,19 +10,19 @@
  */
 char *_strcat(char *dest, char *src)
 {
-char *result = dest;
+char *string = dest;
 
-while (*dest != '\n')
+while (*dest != '\0')
 {
 dest++;
 }
 
-while(*src != '\n')
+while (*src != '\0')
 {
 *dest = *src;
 dest++;
 src++;
 }
 *dest = '\0';
-return (result);
+return (string);
 }
