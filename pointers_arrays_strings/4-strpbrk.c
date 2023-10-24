@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strpbrk - Concatenate two strings, limiting the number of characters copied
+ * *_strpbrk - Concatenate two strings
  *
  * @s: Destination string
  * @accept: Maximum number of characters to copy from src
