@@ -18,7 +18,7 @@ unsigned int k;
 
 if (n < 0)
 {
-putchar('-');
+_putchar('-');
 n *= -1;
 }
 
@@ -27,5 +27,5 @@ k = n;
 if (k / 10)
 print_number(k / 10);
 
-putchar(k % 10 + '0');
+_putchar(k % 10 + '0');
 }
