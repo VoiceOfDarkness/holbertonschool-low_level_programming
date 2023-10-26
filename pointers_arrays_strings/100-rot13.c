@@ -8,7 +8,8 @@
 * two arrays of characters, a and b, which contain the letters of
 * the alphabet in order and the corresponding letters 13 positions ahead.
 * The function then iterates over the input string, replacing each letter
-* with the corresponding letter from b if it is found in a. The function returns the modified string.
+* with the corresponding letter from b if it is found in a.
+* The function returns the modified string.
 *
 * @str: The string to be encoded
 *
