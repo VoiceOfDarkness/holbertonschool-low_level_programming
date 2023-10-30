@@ -23,7 +23,7 @@ return (result(a + 1, b));
 }
 }
 /**
- * is_prime - Entry point
+ * is_prime_number - Entry point
  *
  *@n: int
  *
