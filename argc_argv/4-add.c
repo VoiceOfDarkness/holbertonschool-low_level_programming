@@ -9,21 +9,29 @@
  **/
 int main(int argc, char **argv)
 {
-int i, result;
+int i, n, sum = 0;
+char *flag;
 
-for (i = 0; i < argc; i++)
+if (argc < 2)
 {
-if (atoi(argv[i]) == 0)
+printf("0\n");
+return (0);
+}
+
+for (i = 1; argv[i]; i++)
+{
+n = strtol(argv[i], &flag, 10);
+if (*flag)
 {
 printf("Error\n");
-return (0);
+return (1);
 }
 else
 {
-result += atoi(argv[i]) ;
-printf("%d\n", result);
+sum += n;
 }
 }
+printf("%d\n", sum);
 
 return (0);
 }
