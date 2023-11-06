@@ -1,5 +1,6 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
+
 /**
  * create_array - Entry point
  *
@@ -10,25 +11,20 @@
  */
 char *create_array(unsigned int size, char c)
 {
-char *pointer;
-unsigned int i = 0;
-
+char *result;
+unsigned int i;
 if (size == 0)
 {
 return (NULL);
 }
-
-pointer = (char *)malloc(4 * sizeof(char));
-
-if (pointer == NULL)
+result = malloc(sizeof(char) * size);
+if (result == NULL)
 {
 return (NULL);
 }
-
 for (i = 0; i < size; i++)
 {
-pointer[i] = c;
+result[i] = c;
 }
-
-return (pointer);
+return (result);
 }
