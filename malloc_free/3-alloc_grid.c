@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-* **aloc_grid - Entry point
+* aloc_grid - Entry point
 *
 * @width: char string
 *
@@ -24,7 +24,7 @@ grid = malloc(sizeof(int *) * height);
 if (grid == NULL)
 return (NULL);
 
-for (i = 0; i < height; i ++)
+for (i = 0; i < height; i++)
 {
 grid[i] = malloc(sizeof(int) * width);
 
