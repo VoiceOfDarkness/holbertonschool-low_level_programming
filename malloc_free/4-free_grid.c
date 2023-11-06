@@ -7,6 +7,8 @@
 *
 * @height: int variable
 *
+* @grid: int array
+*
 * Return: Always 0 (Success)
 */
 void free_grid(int **grid, int height)
