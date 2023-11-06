@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
 /**
  * create_array - Entry point
  *
@@ -21,7 +21,9 @@ return (NULL);
 pointer = (char *)malloc(4 * sizeof(char);
 
 if (pointer == NULL)
+{
 return (NULL);
+}
 
 for (i = 0; i < size; i++)
 {
