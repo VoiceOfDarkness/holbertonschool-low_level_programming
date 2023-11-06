@@ -18,7 +18,7 @@ if (size == 0)
 return (NULL);
 }
 
-pointer = (char *)malloc(4 * sizeof(char);
+pointer = (char *)malloc(4 * sizeof(char));
 
 if (pointer == NULL)
 {
