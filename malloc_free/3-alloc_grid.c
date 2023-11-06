@@ -6,19 +6,18 @@
 * **aloc_grid - Entry point
 *
 * @width: char string
-* 
+*
 * @height: char string
 *
 * Return: Always 0 (Success)
 */
 int **alloc_grid(int width, int height)
 {
-int i, j;
+int i, j, **grid;
 
 if (width <= 0 || height <= 0)
 return (NULL);
 
-int **grid;
 
 grid = malloc(sizeof(int *) * height);
 
