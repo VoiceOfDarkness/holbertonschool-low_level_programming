@@ -27,7 +27,7 @@ return (NULL);
 
 for (i = 0; i < size; i++)
 {
-result[i] == c;
+result[i] = c;
 }
 
 return (result);
