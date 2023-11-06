@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
-* aloc_grid - Entry point
+* alloc_grid - Entry point
 *
 * @width: char string
 *
