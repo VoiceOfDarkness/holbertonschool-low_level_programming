@@ -11,7 +11,7 @@
 char *create_array(unsigned int size, char c)
 {
 char *pointer;
-int i = 0;
+unsigned int i = 0;
 
 if (size == 0)
 {
@@ -30,5 +30,5 @@ for (i = 0; i < size; i++)
 pointer[i] = c;
 }
 
-return (result);
+return (pointer);
 }
