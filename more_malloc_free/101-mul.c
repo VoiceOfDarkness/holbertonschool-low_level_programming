@@ -39,7 +39,7 @@ return (num1 * num2);
 */
 int main(int argc, char **argv)
 {
-int num1, num2, result;
+int num1, num2, *result_ptr;
 char *error_message = "Error\n";
 
 if (argc != 3)
@@ -57,7 +57,7 @@ return (98);
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
 
-int *result_ptr = malloc(sizeof(int));
+*result_ptr = malloc(sizeof(int));
 if (result_ptr == NULL) {
 printf("%s", error_message);
 return (98);
