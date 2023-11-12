@@ -56,6 +56,7 @@ char *mul(char n, char *num, int num_index, char *dest, int dest_index)
 	}
 	if (addrem)
 	{
+		free(dest);
 		return (NULL);
 	}
 	return (dest);
