@@ -23,7 +23,6 @@ void _print(char *str, int l)
 	}
 
 	_putchar('\n');
-	free(str);
 }
 
 /**
