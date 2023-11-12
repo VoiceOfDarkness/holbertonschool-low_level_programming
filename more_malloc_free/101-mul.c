@@ -57,7 +57,7 @@ return (98);
 num1 = atoi(argv[1]);
 num2 = atoi(argv[2]);
 
-*result_ptr = malloc(sizeof(int));
+result_ptr = (int *)malloc(sizeof(int));
 if (result_ptr == NULL) {
 printf("%s", error_message);
 return (98);
