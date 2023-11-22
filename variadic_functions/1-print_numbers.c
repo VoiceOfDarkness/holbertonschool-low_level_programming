@@ -9,12 +9,11 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-unsigned int = 0;
+unsigned int i;
+va_list list;
 
 if (separator == NULL)
 separator = "";
-
-va_list list;
 
 va_start(list, n);
 
