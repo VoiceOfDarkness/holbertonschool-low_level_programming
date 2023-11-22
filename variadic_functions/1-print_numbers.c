@@ -26,5 +26,5 @@ printf("%s", separator);
 }
 
 va_end(list);
-printf('\n');
+printf("\n");
 }
