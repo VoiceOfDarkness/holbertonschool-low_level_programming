@@ -22,5 +22,5 @@ The following operations can be performed on a linked list:
 
 ## References
 
-1. Wikipedia
-2. GeeksforGeeks
+1. [Wikipedia](https://en.wikipedia.org/wiki/Linked_list)
+2. [GeeksforGeeks](https://www.geeksforgeeks.org/data-structures/linked-list/)
