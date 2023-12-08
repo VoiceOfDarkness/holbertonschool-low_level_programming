@@ -37,7 +37,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	{
 		if (get_bit(result, 0) == 1)
 			count++;
-		result >>= 2;
+		result >>= 1;
 
 	}
 
