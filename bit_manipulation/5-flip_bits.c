@@ -15,10 +15,13 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	result = n ^ m;
 
-	for (; result > 0;)
+	while (result > 0)
+	{
 		if (get_bit(result, 0) == 1)
 			count++;
 		result >>= 2;
+
+	}
 
 	return (count);
 }
