@@ -1,4 +1,3 @@
-  GNU nano 4.8                         0-hash_table_create.c                         Modified  
 #include "hash_tables.h"
 
 /**
