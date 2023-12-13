@@ -93,9 +93,7 @@ int main(int argc, char *argv[])
         file_perm = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH;
         fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, file_perm);
         check_file_to((ssize_t)fd_to, argv[2], fd_from, -1);
-
         len_read = 1024;
-
         while (len_read == 1024)
         {
                 len_read = read(fd_from, buffer, 1024);
