@@ -44,9 +44,8 @@ hash_node_t *create_hash_node(const char *key, const char *value)
  *
  * Return: 1 if success, 0 if fail
  */
-int hash_table_set(hash_table_t *ht, const char *key, const char *value);
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-
     unsigned long int idx;
     hash_node_t *hash_node, *temp;
     char *new_value;
