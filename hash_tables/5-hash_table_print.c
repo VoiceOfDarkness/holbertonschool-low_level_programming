@@ -20,7 +20,7 @@ void hash_table_print(const hash_table_t *ht)
 
 		while (!node)
 		{
-			rintf("%s'%s': '%s'", comma, node->key, node->value);
+			printf("%s'%s': '%s'", comma, node->key, node->value);
 			comma = ", ";
 			node = node->next;
 		}
